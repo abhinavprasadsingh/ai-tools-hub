@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Free Text Tools - AI Tools Hub</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+<meta name="description" content="Use free browser-based text utilities for studying, writing, resume formatting and productivity.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/tool.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI Tools Hub">
+<meta property="og:title" content="Free Text Tools - AI Tools Hub">
+<meta property="og:description" content="Use free browser-based text utilities for studying, writing, resume formatting and productivity.">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/tool.html">
+<meta name="twitter:card" content="summary">
+</head>
+<body class="tool-page">
+
+<header class="site-header">
+    <nav class="navbar container">
+        <a href="index.html" class="logo">AI Tools<span>Hub.</span></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="tools.html">Explore Tools</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main class="tool-workspace container">
+    <a href="tools.html" class="back-link">← Back to all tools</a>
+
+    <section class="tool-heading">
+        <div class="tool-icon" id="toolIcon">✦</div>
+        <p class="eyebrow">AI TOOLS HUB</p>
+        <h1 id="toolTitle">Loading tool...</h1>
+        <p id="toolDescription">Your productivity starts here.</p>
+    </section>
+
+    <section class="tool-panel">
+        <div class="tool-input-area">
+            <label for="toolInput" id="inputLabel">Enter your text</label>
+            <textarea
+                id="toolInput"
+                rows="10"
+                placeholder="Enter or paste your content here..."
+            ></textarea>
+
+            <div class="input-footer">
+                <span id="inputHint">Enter your content to get started.</span>
+                <span id="characterCount">0 characters</span>
+            </div>
+
+            <div id="extraFields" class="extra-fields"></div>
+
+            <div class="tool-actions"><button class="secondary-button" id="clearButton" type="button">Clear input</button><button class="primary-button generate-button" id="generateButton" disabled>
+                Generate <span>→</span>
+            </button>
+
+            <p class="stage-notice" id="stageNotice">
+                Tool interface ready. Processing will be added in Stage 3.
+            </p>
+        </div>
+
+        <div class="tool-output-area">
+            <div class="output-heading">
+                <div>
+                    <p class="eyebrow">YOUR RESULT</p>
+                    <h2>Output</h2>
+                </div>
+                <button class="copy-button" id="copyButton" disabled>Copy</button>
+            </div>
+
+            <div class="output-content" id="toolOutput" aria-live="polite">
+                <div class="empty-output-icon">✧</div>
+                <h3>Your result will appear here</h3>
+                <p>Enter your content in the input area to get started.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tool-tip">
+        <strong>How to use this tool</strong>
+        <p id="toolInstructions">Enter your content and follow the instructions above.</p>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-bottom">
+        <p>© <span id="currentYear"></span> AI Tools Hub. All rights reserved.</p>
+        <div>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/tool.js"></script>
+</body>
+</html>
+
+
